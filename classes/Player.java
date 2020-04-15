@@ -1,6 +1,9 @@
 package KnightsQuest.classes;
-
-import KnightsQuest.enums.Weapons;
+import KnightsQuest.enums.WeaponType;
+import KnightsQuest.enums.OffHandType;
+import KnightsQuest.enums.ArmorType;
+import KnightsQuest.enums.BootsType;
+import KnightsQuest.enums.HelmType;
 
 public class Player extends Character {
   private static Player instance = null;
@@ -12,8 +15,11 @@ public class Player extends Character {
 
   private Player() {
     super(100, 10, 10);
-    Weapons axe = Weapons.AXE;
-    weapon = new Weapon(axe.name, axe.power, axe.accuracy, axe.twoHanded);
+    weapon = new Weapon(WeaponType.KNIFE);
+    offHand = new OffHand(OffHandType.NONE);
+    armor = new Armor(ArmorType.LEATHER);
+    helm = new Helm(HelmType.LEATHER);
+    boots = new Boots(BootsType.LEATHER);
   }
 
   public static Player getPlayer() {
