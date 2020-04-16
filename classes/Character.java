@@ -2,7 +2,7 @@ package KnightsQuest.classes;
 
 import KnightsQuest.util.Validation;
 
-public class Character {
+public abstract class Character {
   private int health;
   private int maxHealth;
   private int strength;
