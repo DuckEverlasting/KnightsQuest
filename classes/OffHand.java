@@ -1,5 +1,5 @@
-package KnightsQuest.classes;
-import KnightsQuest.enums.OffHandType;
+package classes;
+import enums.OffHandType;
 
 public class OffHand extends Equippable {
   private double accuracy;

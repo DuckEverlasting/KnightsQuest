@@ -1,5 +1,5 @@
-package KnightsQuest.classes;
-import KnightsQuest.enums.WeaponType;
+package classes;
+import enums.WeaponType;
 
 public class Weapon extends Equippable {
   private double accuracy;

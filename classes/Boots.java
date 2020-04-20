@@ -1,5 +1,6 @@
-package KnightsQuest.classes;
-import KnightsQuest.enums.BootsType;
+package classes;
+
+import enums.BootsType;
 
 public class Boots extends Equippable {
 

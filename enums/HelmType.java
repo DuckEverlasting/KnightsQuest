@@ -1,4 +1,4 @@
-package KnightsQuest.enums;
+package enums;
 
 public enum HelmType {
   NONE("None", 0, 0),

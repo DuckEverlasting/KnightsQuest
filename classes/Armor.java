@@ -1,5 +1,6 @@
-package KnightsQuest.classes;
-import KnightsQuest.enums.ArmorType;
+package classes;
+
+import enums.ArmorType;
 
 public class Armor extends Equippable {
 

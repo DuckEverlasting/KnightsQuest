@@ -1,4 +1,4 @@
-package KnightsQuest.enums;
+package enums;
 
 public enum EnemyType {
   GOBLIN("Goblin", 50, 6, 8),

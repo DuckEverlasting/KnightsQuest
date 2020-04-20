@@ -1,59 +1,59 @@
-package KnightsQuest.classes;
+// import util.Validation;
 
-import KnightsQuest.util.Validation;
+// public abstract class Character implements GameObject {
+//   private int health;
+//   private int maxHealth;
+//   private int strength;
+//   private int dexterity;
 
-public abstract class Character {
-  private int health;
-  private int maxHealth;
-  private int strength;
-  private int dexterity;
+//   private CharacterStats stats;
 
-  public Character(int health, int strength, int dexterity) {
-    this.health = health;
-    this.maxHealth = health;
-    this.strength = strength;
-    this.dexterity = dexterity;
-  }
+//   public Character(int health, int strength, int dexterity) {
+//     this.health = health;
+//     this.maxHealth = health;
+//     this.strength = strength;
+//     this.dexterity = dexterity;
+//   }
 
-  public int getHealth() {
-    return this.health;
-  }
+//   public int getHealth() {
+//     return this.health;
+//   }
 
-  public void setHealth(int num) {
-    num = Validation.validateInteger(num, 0, this.maxHealth);
-    this.health = num;
-  }
+//   public void setHealth(int num) {
+//     num = Validation.validateInteger(num, 0, this.maxHealth);
+//     this.health = num;
+//   }
 
-  public void incrementHealth(int num) {
-    num = Validation.validateInteger(num, 0, this.maxHealth);
-    this.health += num;
-  }
+//   public void incrementHealth(int num) {
+//     num = Validation.validateInteger(num, 0, this.maxHealth);
+//     this.health += num;
+//   }
 
-  public int getStrength() {
-    return this.strength;
-  }
+//   public int getStrength() {
+//     return this.strength;
+//   }
 
-  public void setStrength(int num) {
-    num = Validation.validateInteger(num);
-    this.strength = num;
-  }
+//   public void setStrength(int num) {
+//     num = Validation.validateInteger(num);
+//     this.strength = num;
+//   }
 
-  public void incrementStrength(int num) {
-    num = Validation.validateInteger(num);
-    this.strength += num;
-  }
+//   public void incrementStrength(int num) {
+//     num = Validation.validateInteger(num);
+//     this.strength += num;
+//   }
 
-  public int getDexterity() {
-    return this.dexterity;
-  }
+//   public int getDexterity() {
+//     return this.dexterity;
+//   }
 
-  public void setDexterity(int num) {
-    num = Validation.validateInteger(num);
-    this.dexterity = num;
-  }
+//   public void setDexterity(int num) {
+//     num = Validation.validateInteger(num);
+//     this.dexterity = num;
+//   }
 
-  public void incrementDexterity(int num) {
-    num = Validation.validateInteger(num);
-    this.dexterity += num;
-  }
-}
+//   public void incrementDexterity(int num) {
+//     num = Validation.validateInteger(num);
+//     this.dexterity += num;
+//   }
+// }

@@ -1,5 +1,5 @@
-package KnightsQuest.classes;
-import KnightsQuest.enums.HelmType;
+package classes;
+import enums.HelmType;
 
 public class Helm extends Equippable {
 

@@ -1,4 +1,4 @@
-package KnightsQuest.util;
+package util;
 
 public class Validation {
   public static int validateInteger(int num, int min, int max) {

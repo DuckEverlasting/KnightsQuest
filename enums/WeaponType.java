@@ -1,4 +1,4 @@
-package KnightsQuest.enums;
+package enums;
 
 public enum WeaponType {
   UNARMED("Unarmed", 10, 0, 1, false),

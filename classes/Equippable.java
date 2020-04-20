@@ -1,4 +1,4 @@
-package KnightsQuest.classes;
+package classes;
 
 public class Equippable {
   private String name;
