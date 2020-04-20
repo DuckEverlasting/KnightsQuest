@@ -157,6 +157,10 @@ public class Game extends JFrame implements Runnable {
   }
 
   public void leftClick(XY loc) {
+    Rectangle mouseRect = new Rectangle(loc, new XY(1,1));
+    for (int i = 0; i < gameObjects.length; i++) {
+      gameObjects[i].handleMouseClick(mouseRect, renderer.getCamera(), zoom);
+    }
     loc.x = (int) Math.floorDiv(loc.x + renderer.getCamera().x, TILESIZE.x * zoom.x);
     loc.y = (int) Math.floorDiv(loc.y + renderer.getCamera().y, TILESIZE.y * zoom.y);
     map.setTile(14, loc);

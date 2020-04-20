@@ -21,28 +21,11 @@ public class AnimatedSprite extends Sprite implements UpdatableEntity {
   }
 
   AnimatedSprite(SpriteSheet sheet, XY dim, int end, int frameRate, String dir) {
-    super();
-    this.dim = dim;
-    this.frameRate = frameRate;
-    this.animDirection = dir;
-    if (end < 1) {
-      System.out.println("Error: Illegal arguments in animated sprite. Need at least two frames.");
-    } else {
-      buildCells(sheet, 0, end);
-    }
+    this(sheet, dim, 0, end, frameRate, dir);
   }
 
   AnimatedSprite(SpriteSheet sheet, XY dim, int frameRate, String dir) {
-    super();
-    this.dim = dim;
-    this.frameRate = frameRate;
-    this.animDirection = dir;
-    int end = (sheet.SIZE.x / dim.x) * (sheet.SIZE.y / dim.y) - 1;
-    if (end < 1) {
-      System.out.println("Error: Illegal arguments in animated sprite. Need at least two frames.");
-    } else {
-      buildCells(sheet, 0, end);
-    }
+    this(sheet, dim, 0, (sheet.SIZE.x / dim.x) * (sheet.SIZE.y / dim.y) - 1, frameRate, dir);
   }
 
   private void buildCells(SpriteSheet sheet, int start, int end) {

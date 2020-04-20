@@ -9,6 +9,13 @@ public class Rectangle {
     this.h = h;
   }
 
+  Rectangle(XY loc, XY dim) {
+    this.x = loc.x;
+    this.y = loc.y;
+    this.w = dim.x;
+    this.h = dim.y;
+  }
+
   Rectangle() {
     this.x = 0;
     this.y = 0;
@@ -43,5 +50,22 @@ public class Rectangle {
       System.out.println("ERROR: Can't get pixels when there are no pixels to be got.");
       return null;
     }
+  }
+
+  public boolean intersects(Rectangle rect) {
+    if (x > rect.x + rect.w || rect.x > x + w) {
+      return false;
+    } else if (y > rect.y + rect.h || rect.y > y + h) {
+      return false;
+    }
+    return true;
+  }
+
+  public XY getLoc() {
+    return new XY(x, y);
+  }
+
+  public XY getDim() {
+    return new XY(w, h);
   }
 }
